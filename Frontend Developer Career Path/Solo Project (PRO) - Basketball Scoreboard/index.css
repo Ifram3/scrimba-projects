@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'cursed_timer_ulilregular';
+    src: url('cursedtimerulil-aznm-webfont.woff2') format('woff2'),
+         url('cursedtimerulil-aznm-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 575px;
+    height: 385px;
+    top: -1135px;
+    left: -1996px;
+    gap: 0px;
+    opacity: 0px;
+    background: #258d8d;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+h3 {
+    width: 149px;
+    height: 36px;
+    top: 68px;
+    left: 85px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Verdana;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 35.89px;
+    text-align: center;
+    color: #EEEEEE;
+
+}
+
+.home-score {
+    width: 155px;
+    height: 120px;
+    top: 125px;
+    left: 82px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    opacity: 0px;
+    background: #080001;
+}
+
+.home-points {
+    width: 117px;
+    height: 120px;
+    top: 125px;
+    left: 100px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: cursed_timer_ulilregular;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 126.67px;
+    text-align: center;
+    color: #F94F6D;
+    ;
+}
+
+.add {
+    display: flex;
+    justify-content: space-around;
+    width: 155px;
+    height: 45px;
+    top: 271px;
+    left: 337px;
+    gap: 3px;
+    border-radius: 5px 0px 0px 0px;
+    opacity: 0px;
+    margin-top: 20px;
+
+}
+
+.points-btns {
+    width: 45px;
+    height: 45px;
+    top: 271px;
+    left: 82px;
+    border-radius: 5px 0px 0px 0px;
+    opacity: 0px;
+    color: #9AABD8;
+    border: 2px solid #9AABD8
+}
+
+p {
+    width: 30px;
+    height: 29.77px;
+    top: 280px;
+    left: 89px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: cursed_timer_ulilregular;
+    font-size: 18px;
+    line-height: 27.81px;
+    text-align: center; 
+    margin: 10px auto ;
+}
+
+#quarter {
+        width: 105px;
+        height: 80px;
+        gap: 0px;
+        border-radius: 5px 0px 0px 0px;
+        opacity: 0px;
+        background: #080001;
+        margin: auto;
+}
+
+#qtr {
+    align-self: center;
+    position: relative;
+    top: -45px;
+}
+
+#et {
+    font-size: 30px;
+    line-height: 75.89px;
+}
+
+.qtr-score {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 91.67px;
+    color: aqua;
+}
+
+button {
+    position: relative;
+    top: -45px;
+    left: 12px;
+    color: rgb(214, 160, 43);
+    padding: 3px;
+}
+
+.new {
+    width: 30%;
+    background: #9AABD8;
+    left: 0px;
+    top: -75px;
+    color: #011a1a;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+}

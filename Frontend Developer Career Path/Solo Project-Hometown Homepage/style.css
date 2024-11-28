@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Vollkorn", serif;
+    font-weight: 700;
+}
+
+header {
+    width: 720px;
+    height: 343px;
+    background-image: url("images/Lagos.jpg");
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lagos {
+    width: 225px;
+    height: 42px;
+    top: 119px;
+    left: 247px;
+    border-radius: 10px;
+    background-color: #1D3557;
+    position: absolute;
+    font-size: 32px;
+}
+
+#hub {
+    width: 432px;
+    height: 72px;
+    top: 172px;
+    left: 154px;
+    border-radius: 10px;
+    background-color:  #457B9D;
+    position: absolute;
+    font-size: 18px;
+}
+
+main {
+    background-color: #F1FAEE;
+    width: 720px;
+    height: 1428px;
+    top: -19.4px;
+    position: relative;   
+    color:#1D3557;
+}
+
+.activity {
+    width: 439px;
+    height: 20px;
+    top: 39px;
+    left: 140px;
+    position: relative;
+    font-size: 24px;
+}
+
+.fun {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.show {
+    width: 220px;
+    height: 380px;
+    top: 80px;
+    /*border: 1px solid black;*/
+    position: relative;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.photos {
+    width: 140px;
+    border-radius: 50%;
+    height: 140px;
+}
+
+#adjust {
+    top: 90px;
+}
+
+.culture {
+    width: 200px;
+    height: 340px;
+    top: 80px;
+    /*border: 1px solid black;*/
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 3% 3% 0 0;
+    text-align: center;
+    transition: transform 1s;
+}
+
+.culture:hover {
+    transform: scale(1.13);
+}
+
+#gallery {
+    background-color: #DCDEE0;
+}
+
+#lekki {
+    background-color: #8DA192;
+}
+
+#park {
+    background-color: #C0B69F;
+}
+
+#shift {
+    top: 50px;
+    position: relative;
+}
+
+.pictures {
+    width: 200px;
+    height: 170px;
+    border-radius: 3% 3% 0 0;
+}
+
+.and {
+    margin: 0;
+    height: 18px;
+    line-height: 16px;
+}
+
+.live {
+    height: 18px;
+    line-height: 18px;
+    padding: 5px;
+}
+
+footer {
+    width: 720px;
+    height: 394px;
+    color:#1D3557;
+    background: #dfebef;
+    top: -19.4px;
+    position: relative;
+}
+
+.guide {
+    width: 400px;
+    height: 294px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    background: #A8DADC;   
+    box-shadow: 0px 6px 0px 0px #1D3557;
+    top: 40px;
+    position: relative;
+}
+
+#me {
+    width: 180px;
+    height: 248.67px;
+    position: relative;
+    /*padding: 23px 7px 22.33px 13px;*/
+    top: 23px;
+    left: 13px;
+    border-radius: 10px;
+}
+
+/*#best {
+    top: 30px;
+    bottom: 84px;
+    position: relative;
+}*/
+
+#your {
+    width: 207px;
+    height: 32px;
+    top: 30px;
+    position: relative;
+    font-size: 24px;
+    line-height: 27.6px;
+}
+
+#hidden {
+    width: 189px;
+    height: 71px;
+    top: 28px;
+    left: 11px;
+    position: relative;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18.4px;
+}
+
+#name {
+    width: 189px;
+    height: 18px;
+    top: 28px;
+    left: 11px;
+    position: relative;
+    font-size: 16px;
+    line-height: 18.4px;
+}
+
+@media only screen and (min-width: 731px) {
+    header{
+        width: 100%;
+        height: 500px;
+        background-size: contain;
+    }
+
+    #lagos {
+        left: 45%;
+    }
+
+    #hub {
+        left: 40%
+    }
+
+    main {
+        width: 100%;
+        height: 1050px;
+    }
+
+    .activity {
+        left: 36%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+}

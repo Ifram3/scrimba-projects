@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">\
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <div class="home-score"><p class="home-points" id="count_el">0</p></div>
+                <div class="add">
+                    <div class="points-btns" onclick="plusOne()"><p>+1</p></div>
+                    <div class="points-btns" onclick="plusTwo()"><p>+2</p></div>
+                    <div class="points-btns" onclick="plusThree()"><p>+3</p></div>
+                </div>
+            </div>
+
+            <div id="qtr">
+                <h3 id="et">QTR</h3>
+                <div id="quarter">
+                    <p class="home-points qtr-score" id="qtr_el">0</p>
+                    <button onclick="nextQuarter()">Next Quarter</button>
+                </div>
+               
+            </div>
+
+            <div>
+                <h3>GUEST</h3>
+                <div class="home-score"><p class="home-points" id="point_el">0</p></div>
+                <div class="add">
+                    <div class="points-btns" onclick="addOne()"><p>+1</p></div>
+                    <div class="points-btns" onclick="addTwo()"><p>+2</p></div>
+                    <div class="points-btns" onclick="addThree()"><p>+3</p></div>
+                </div>
+            </div>
+        
+            
+                <button class="new" onclick="fresh()">New Game</button>
+            
+       
+    </div>
+
+        
+
+        <script src="index.js"></script>
+    </body>
+</html>

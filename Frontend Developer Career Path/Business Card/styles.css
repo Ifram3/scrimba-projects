@@ -1,0 +1,84 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #2D3142;
+    color: #B6B190;
+    border-bottom: 6px solid #AEA984;
+    box-shadow: 2px 2px 6px 0 #2D3142;
+    transition: box-shadow 2s;
+    
+    /* animation-name: Business;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-fill-mode: none; */
+    
+    animation: Business 10s ease 3s 1 normal none;
+    
+    /* animation-name
+    animation-duration
+    animation-timing-function
+    animation-delay
+    animation-iteration-count
+    animation-direction
+    animation-fill-mode
+    animation-play-state */
+    
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+@keyframes Business {
+    0% {background: #2D3142;}
+    25% {background: #BFC0C0; color: #664E3F;}
+    50% {background: #A40E4C;}
+    100% {background: #4F5D75;}
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+

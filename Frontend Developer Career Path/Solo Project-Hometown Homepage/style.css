@@ -11,9 +11,9 @@ header {
     background-image: url("images/Lagos.jpg");
     background-size: cover;
     color: #ffffff;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 
 #lagos {

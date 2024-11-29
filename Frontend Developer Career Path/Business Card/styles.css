@@ -7,7 +7,7 @@ body {
     */
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -65,9 +65,9 @@ body {
     box-shadow: none;
 }
 
-.border-blue {
+/* .border-blue {
     border: 1px dotted blue;
-}
+} */
 
 /*
 Stretch goals:

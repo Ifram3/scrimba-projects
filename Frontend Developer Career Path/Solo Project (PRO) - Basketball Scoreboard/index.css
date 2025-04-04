@@ -4,152 +4,132 @@
          url('cursedtimerulil-aznm-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
-body {
+* {
     margin: 0;
+    box-sizing: border-box;
 }
 
-.container {
+/* main */
+.scoreboard {
     display: flex;
-    justify-content: space-around;
-    width: 575px;
-    height: 385px;
-    top: -1135px;
-    left: -1996px;
-    gap: 0px;
-    opacity: 0px;
-    background: #258d8d;
-    margin: auto;
+    justify-content: space-evenly;
+    gap: 0.66rem;
     flex-wrap: wrap;
+    max-width: 34.94em;
+    width: 90vw;
+    height: 24.06rem;
+    margin: 0.66rem auto;
+    background: #42CDCD;
 }
 
-h3 {
-    width: 149px;
-    height: 36px;
-    top: 68px;
-    left: 85px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Verdana;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 35.89px;
+/* Home Team Section */
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 3rem;
+}
+
+h1 {
+    width: 9.3rem;
+    color: #33691C;
     text-align: center;
-    color: #EEEEEE;
-
+    font-family: Verdana;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.24rem;
 }
 
-.home-score {
-    width: 155px;
-    height: 120px;
-    top: 125px;
-    left: 82px;
-    gap: 0px;
-    border-radius: 5px 0px 0px 0px;
-    opacity: 0px;
+.score-display {
+    width: 9.69rem;
+    margin-top: 0.94rem;
     background: #080001;
+    border-radius: 5px 0 0 0;
 }
 
-.home-points {
-    width: 117px;
-    height: 120px;
-    top: 125px;
-    left: 100px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: cursed_timer_ulilregular;
-    font-size: 90px;
-    font-weight: 400;
-    line-height: 126.67px;
+.score {
+    width: 7.3rem;
+    height: 7.3rem;
+    margin: auto;
     text-align: center;
     color: #F94F6D;
-    ;
-}
-
-.add {
-    display: flex;
-    justify-content: space-around;
-    width: 155px;
-    height: 45px;
-    top: 271px;
-    left: 337px;
-    gap: 3px;
-    border-radius: 5px 0px 0px 0px;
-    opacity: 0px;
-    margin-top: 20px;
-
-}
-
-.points-btns {
-    width: 45px;
-    height: 45px;
-    top: 271px;
-    left: 82px;
-    border-radius: 5px 0px 0px 0px;
-    opacity: 0px;
-    color: #9AABD8;
-    border: 2px solid #9AABD8
-}
-
-p {
-    width: 30px;
-    height: 29.77px;
-    top: 280px;
-    left: 89px;
-    gap: 0px;
-    opacity: 0px;
     font-family: cursed_timer_ulilregular;
-    font-size: 18px;
-    line-height: 27.81px;
-    text-align: center; 
-    margin: 10px auto ;
-}
-
-#quarter {
-        width: 105px;
-        height: 80px;
-        gap: 0px;
-        border-radius: 5px 0px 0px 0px;
-        opacity: 0px;
-        background: #080001;
-        margin: auto;
-}
-
-#qtr {
-    align-self: center;
-    position: relative;
-    top: -45px;
-}
-
-#et {
-    font-size: 30px;
-    line-height: 75.89px;
-}
-
-.qtr-score {
-    font-size: 50px;
+    font-size: 5.63rem;
     font-weight: 400;
-    line-height: 91.67px;
-    color: aqua;
+    line-height: 7.88rem;
 }
 
-button {
-    position: relative;
-    top: -45px;
-    left: 12px;
-    color: rgb(214, 160, 43);
-    padding: 3px;
+.score-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 9.69rem;
 }
 
-.new {
-    width: 30%;
+.score-btn {
+    width: 2.9rem;
+    height: 2.9rem;
+    border-radius: 5px 0 0 0;
+    background: none;
+    color: #474771;
+    border: 2px solid #474771;
+    cursor: pointer;
+}
+
+span {
+    font-family: cursed_timer_ulilregular;
+    font-size: 1.19rem;
+}
+
+/* Quarter Section */
+.quarter-section {
+    gap: 0;
+    height: 12.7rem;
+}
+
+#quarterLabel {
+    margin-top: 1.25rem;
+    font-size: 1.9rem;
+    line-height: 4.1rem;
+}
+
+.quarter-display {
+    width: 6.6rem;
+    height: 5rem;
+    margin: 0 auto 0.31rem;
+    background: #080001;
+    border-radius: 5px 0 0 0;
+}
+
+.quarter-display p {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+    color: #00ffff;
+    font-size: 3.13rem;
+    font-family: cursed_timer_ulilregular;
+    font-weight: 400;
+}
+
+.next-quarter-btn {
+    width: 5.35rem;
+    color: #7A5A15;
+    margin: 0 auto;
+    padding: 0.19rem;
+    cursor: pointer;
+}
+
+.reset-game-btn {
+    width: 9.7rem;
+    padding: 0.63rem 0.13rem;
     background: #9AABD8;
-    left: 0px;
-    top: -75px;
     color: #011a1a;
-    font-size: 18px;
+    font-size: 1.13rem;
     border: none;
     border-radius: 3px;
+    position: relative;
+    top: -4.5rem;
+    left: 0;
+    cursor: pointer;
 }

@@ -1,53 +1,59 @@
-let countEL = document.getElementById("count_el")
-let pointEL = document.getElementById("point_el")
-let qtrEL = document.getElementById("qtr_el")
-count = 0
-point = 0
-next = 0
+let homeScoreEl = document.getElementById("homeScore");
+let guestScoreEl = document.getElementById("guestScore");
+let currentQuarterEl = document.getElementById("currentQuarter");
 
-function plusOne() {
-    count += 1
-    countEL.textContent = count
+homeCount = 0;
+guestCount = 0;
+quarterCount = 1;
+
+//HOME_SCORE
+function increaseHomeScoreOne() {
+    homeCount += 1;
+    homeScoreEl.textContent = homeCount;
 }
 
-function plusTwo() {
-    count += 2
-    countEL.textContent = count
+function increaseHomeScoreTwo() {
+    homeCount += 2;
+    homeScoreEl.textContent = homeCount;
 }
 
-function plusThree() {
-    count += 3
-    countEL.textContent = count
+function increaseHomeScoreThree() {
+    homeCount += 3;
+    homeScoreEl.textContent = homeCount;
 }
 
-//
 
-function addOne() {
-    point += 1
-    pointEL.textContent = point
-}
+//GUEST_SCORE
+  function increaseGuestScoreOne() {
+    guestCount += 1;
+      guestScoreEl.textContent = guestCount;
+  }
 
-function addTwo() {
-    point += 2
-    pointEL.textContent = point
-}
+ function increaseGuestScoreTwo() {
+    guestCount += 2;
+     guestScoreEl.textContent = guestCount;
+ }
 
-function addThree() {
-    point += 3
-    pointEL.textContent = point
-}
+ function increaseGuestScoreThree() {
+    guestCount += 3;
+    guestScoreEl.textContent = guestCount;
+ }
 
-//
 
+//NEXT_QUARTER 
 function nextQuarter() {
-    next += 1;
-    qtrEL.textContent = next
+    quarterCount += 1;
+    currentQuarterEl.textContent = quarterCount;
 }
 
-//
 
-function fresh() {
-    qtrEL.textContent = 0
-    pointEL.textContent = 0
-    countEL.textContent = 0
+//NEW_GAME
+function resetGame() {
+    homeCount = 0;
+    guestCount = 0;
+    quarterCount = 1;
+
+    homeScore.textContent = homeCount;
+    guestScore.textContent = guestCount;
+    currentQuarter.textContent = quarterCount;
 }

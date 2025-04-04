@@ -1,47 +1,57 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
     <head>
-        <link rel="stylesheet" href="index.css">\
-        <link rel="stylesheet" href="stylesheet.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basketball Scoreboard</title>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="container">
-            <div>
-                <h3>HOME</h3>
-                <div class="home-score"><p class="home-points" id="count_el">0</p></div>
-                <div class="add">
-                    <div class="points-btns" onclick="plusOne()"><p>+1</p></div>
-                    <div class="points-btns" onclick="plusTwo()"><p>+2</p></div>
-                    <div class="points-btns" onclick="plusThree()"><p>+3</p></div>
+        <main class="scoreboard">
+            <!-- Home Team Section -->
+            <section class="team">
+                <h1>HOME</h1>
+
+                <div class="score-display">
+                    <p class="score" id="homeScore">0</p>
                 </div>
-            </div>
 
-            <div id="qtr">
-                <h3 id="et">QTR</h3>
-                <div id="quarter">
-                    <p class="home-points qtr-score" id="qtr_el">0</p>
-                    <button onclick="nextQuarter()">Next Quarter</button>
+                <div class="score-buttons">
+                    <button class="score-btn" onclick="increaseHomeScoreOne()"><span>+1</span></button>
+                    <button class="score-btn" onclick="increaseHomeScoreTwo()"><span>+2</span></button>
+                    <button class="score-btn" onclick="increaseHomeScoreThree()"><span>+3</span></button>
                 </div>
-               
-            </div>
+            </section>
 
-            <div>
-                <h3>GUEST</h3>
-                <div class="home-score"><p class="home-points" id="point_el">0</p></div>
-                <div class="add">
-                    <div class="points-btns" onclick="addOne()"><p>+1</p></div>
-                    <div class="points-btns" onclick="addTwo()"><p>+2</p></div>
-                    <div class="points-btns" onclick="addThree()"><p>+3</p></div>
+            <!-- Quarter Section -->
+            <section class="team quarter-section">
+                <h1 id="quarterLabel">QTR</h1>
+
+                <div class="quarter-display">
+                    <p id="currentQuarter">1</p>
                 </div>
-            </div>
-        
-            
-                <button class="new" onclick="fresh()">New Game</button>
-            
-       
-    </div>
 
-        
+                <button class="next-quarter-btn" onclick="nextQuarter()">Next Quarter</button>
+            </section>
 
+            <!-- Guest Team Section -->
+            <section class="team">
+                <h1>GUEST</h1>
+
+                <div class="score-display">
+                    <p class="score" id="guestScore">0</p>
+                </div>
+
+                <div class="score-buttons">
+                    <button class="score-btn" onclick="increaseGuestScoreOne()"><span>+1</span></button>
+                    <button class="score-btn" onclick="increaseGuestScoreTwo()"><span>+2</span></button>
+                    <button class="score-btn" onclick="increaseGuestScoreThree()"><span>+3</span></button>
+                </div>
+            </section>
+
+            <!-- New Game Button -->
+            <button class="reset-game-btn" onclick="resetGame()">New Game</button>
+        </main>
         <script src="index.js"></script>
     </body>
 </html>

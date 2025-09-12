@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
     <div class="Password-generator">
@@ -16,27 +16,26 @@
             <button id="generate-password-btn">Generate passwords</button>
             <!-- <button id="generate-password-btn" onclick="generatePassword()">Generate passwords</button>  -->
         </div>
-        <hr>
+        <hr />
         
         <button id="show-password-btn">
             <span id="password-display"></span>
-            <span id="copy-icon">
-                <i class="fa-solid fa-copy"></i>
-            </span>
+            <span id="copy-icon"><i class="fa-solid fa-copy"></i></span>
         </button>
         <div id="copied-msg-one" class="copied-msg">Copied!</div>
+
         <button id="display-password-btn">
             <span id="generated-password"></span>
-            <span id="copy-symbol">
-                <i class="fa-solid fa-copy"></i>
-            </span>
+            <span id="copy-symbol"><i class="fa-solid fa-copy"></i></span>
         </button>
         <div id="copied-msg-two" class="copied-msg">Copied!</div>
+
         <div class="toggle">
             <label class="container">Include numbers
                 <input type="checkbox" id="include-numbers" /> 
                 <span class="checkmark"></span>
             </label>
+            
             <label class="container">Include symbols
                 <input type="checkbox" id="include-symbols" />  
                 <span class="checkmark"></span> 
@@ -45,6 +44,5 @@
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>

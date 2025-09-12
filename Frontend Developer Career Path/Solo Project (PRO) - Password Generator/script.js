@@ -28,17 +28,14 @@ let copiedMsgTwo = document.getElementById("copied-msg-two");
 let includeNumbersCheckbox = document.getElementById("include-numbers");
 let includeSymbolsCheckbox = document.getElementById("include-symbols");
 
-
 function getRandomCharacters(characters) {
-    return characters[ Math.floor( Math.random() * characters.length ) ];
+    return characters[Math.floor(Math.random() * characters.length)];
 }
 
 function generatePassword() {
     let firstPassword = "";
     let secondPassword = "";
-
     let passwordLength = passwordLengthInput.value;
-    
     let characters = letters;
 
     if (includeNumbersCheckbox.checked) {
@@ -69,19 +66,19 @@ function generatePassword() {
 generateBtn.addEventListener("click", generatePassword);
 
 copyIcon.addEventListener("click", function() {
-        navigator.clipboard.writeText(showPasswordBtn.textContent);
-        copiedMsgOne.style.display = "inline";
+    navigator.clipboard.writeText(showPasswordBtn.textContent);
+    copiedMsgOne.style.display = "inline";
 
-        setTimeout(function() {
-            copiedMsgOne.style.display = "none";
-        }, 1500);
-    });
+    setTimeout(function() {
+        copiedMsgOne.style.display = "none";
+    }, 1500);
+});
 
 copySymbol.addEventListener("click", function() {
-        navigator.clipboard.writeText(displayPasswordBtn.textContent);
-        copiedMsgTwo.style.display = "inline";
+    navigator.clipboard.writeText(displayPasswordBtn.textContent);
+    copiedMsgTwo.style.display = "inline";
 
-        setTimeout(function() {
-            copiedMsgTwo.style.display = "none";
-        }, 1500);
-    });
+    setTimeout(function() {
+        copiedMsgTwo.style.display = "none";
+    }, 1500);
+});

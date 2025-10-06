@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root {
+    /* --black: #000;
+    --white: #FFF;
+    --bg-primary: #1F2937;
+    --bg-secondary: #6943FF;
+    --bg-tertiary: #273549;
+    --header: #CCC1FF;
+    --border: #B295FF;
+    --btn: #3D3D3D; */
+
+    --black: #0F172A;
+    --white: #FFF;
+    --bg-primary: #1E293B;
+    --bg-secondary: #6943FF;
+    --bg-tertiary: #334155;
+    --header: #6366F1;
+    --border: #B295FF;
+    --btn: #1E293B;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -11,7 +31,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100dvh;
-    background-color: #000;
+    background-color: var(--black);
     font-family: "Inter", sans-serif;
 }
 
@@ -19,7 +39,7 @@ body {
     width: 100%;
     max-width: 550px;
     /* min-height: 729px; */
-    background-color: #1F2937;
+    background-color: var(--bg-primary);
 }
 
 header {
@@ -29,36 +49,31 @@ header {
     justify-content: space-evenly;
     /* width: 100%; */
     min-height: 285px;
-    background-color: #6943FF;
+    background-color: var(--bg-secondary);
 }
 
 h1 {
     max-width: 449px;
-    max-height: 38px;
-    color: #FFF;
+    min-height: 38px;
+    color: var(--white);
     font-size: 28px;
     font-weight: 900;
     line-height: 38px;
     letter-spacing: -0.03px;
-    /* border: 1px solid red; */
 }
 
 #unit {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     width: 20%;
     min-height: 83px; 
     /* min-width: 117px;
     min-height: 83px; */
-    border: 2px solid #B295FF;
+    border: 2px solid var(--border);
     border-radius: 5px;
     font-size: 58px;
     line-height: 25px;
     font-weight: 900;
-    color: #FFF;
-    background-color: #6943FF;
+    color: var(--white);
+    background-color: var(--bg-secondary);
     text-align: center;
 }
 
@@ -67,7 +82,7 @@ h1 {
 }
 
 #unit::placeholder {
-    color: #FFF;
+    color: var(--white);
 }
 
 button {
@@ -75,8 +90,8 @@ button {
     min-height: 42px;
     border: none;
     border-radius: 5px;
-    background-color: #FFF;
-    color: #3D3D3D;
+    background-color: #FACC15;
+    color: var(--btn);
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -100,7 +115,7 @@ section {
     width: 90%;
     /* min-width: 500px; */
     min-height: 109px;
-    background-color: #273549;
+    background-color: var(--bg-tertiary);
     border-top-left-radius: 4.7px;
 }
 
@@ -108,12 +123,12 @@ section {
     font-size: 20px;
     font-weight: 700;
     line-height: 20px;
-    color: #CCC1FF;
+    color: var(--header);
 }
 
 .pro p {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    color: #FFF;
+    color: var(--white);
 }

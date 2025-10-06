@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    /* --black: #000;
+    /* --body: #000;
     --white: #FFF;
     --bg-primary: #1F2937;
     --bg-secondary: #6943FF;
@@ -10,14 +10,18 @@
     --border: #B295FF;
     --btn: #3D3D3D; */
 
-    --black: #0F172A;
+    --body: #0D1B1E;
+    --bg-primary: #1E3A3A;
+    --bg-secondary: #10B981;
+    --h1: #F9FAFB;
+    --bg-input: #065F46;
+    --placeholder: #D1FAE5;
+    --bg-btn: #34D399;
+    --btn: #064E3B;
+    --bg-tertiary: #134E4A; 
+    --header: #6EE7B7;
+    --border: #34D399;
     --white: #FFF;
-    --bg-primary: #1E293B;
-    --bg-secondary: #6943FF;
-    --bg-tertiary: #334155;
-    --header: #6366F1;
-    --border: #B295FF;
-    --btn: #1E293B;
 }
 
 * {
@@ -31,7 +35,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100dvh;
-    background-color: var(--black);
+    background-color: var(--body);
     font-family: "Inter", sans-serif;
 }
 
@@ -55,7 +59,7 @@ header {
 h1 {
     max-width: 449px;
     min-height: 38px;
-    color: var(--white);
+    color: var(--h1);
     font-size: 28px;
     font-weight: 900;
     line-height: 38px;
@@ -72,8 +76,8 @@ h1 {
     font-size: 58px;
     line-height: 25px;
     font-weight: 900;
-    color: var(--white);
-    background-color: var(--bg-secondary);
+    color: var(--h1);
+    background-color: var(--bg-input);
     text-align: center;
 }
 
@@ -82,7 +86,7 @@ h1 {
 }
 
 #unit::placeholder {
-    color: var(--white);
+    color: var(--placeholder);
 }
 
 button {
@@ -90,7 +94,7 @@ button {
     min-height: 42px;
     border: none;
     border-radius: 5px;
-    background-color: #FACC15;
+    background-color: var(--bg-btn);
     color: var(--btn);
     font-size: 16px;
     font-weight: 500;
@@ -130,5 +134,5 @@ section {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    color: var(--white);
+    color: var(--h1); 
 }

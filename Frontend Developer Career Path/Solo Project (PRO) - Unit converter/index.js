@@ -1,8 +1,5 @@
 /*
 1 meter = 3.281 feet
-? meter = 20 feet
-
-
 1 liter = 0.264 gallon
 1 kilogram = 2.204 pound
 */
@@ -33,5 +30,7 @@ convert.addEventListener("click", function() {
     ${Number((units * kiloToPound).toFixed(3))}  
     pounds | ${units} pounds = 
     ${Number((units / kiloToPound).toFixed(3))} kilos`
-    //console.log(calc);
+
+    unit.value = "";
+    unit.placeholder = "";
 })
